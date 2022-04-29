@@ -30,10 +30,10 @@ namespace Graduation_Project_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label3.Text = "MANAGE GRADES";
+            label3.Text = "ADD MILESTONES";
 
 
-            openChildForm(new ManageGrades());
+            openChildForm(new add_milestones());
             active = true; 
         }
 
@@ -55,10 +55,10 @@ namespace Graduation_Project_System
         {
 
         }
-        private void openChildForm(Form childForm)
+          internal void openChildForm(Form childForm)
         {
             if (active)
-                activeForm.Close();
+             activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -73,6 +73,29 @@ namespace Graduation_Project_System
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+          
+           // openChildForm(new studentsReportForm());
         }
     }
 }

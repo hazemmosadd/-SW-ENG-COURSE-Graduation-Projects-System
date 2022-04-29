@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace Graduation_Project_System
 {
-    public partial class ManageGrades : Form
+    public partial class studentsReportForm : Form
     {
-        public ManageGrades()
+        CrystalReport3 CR;
+
+        public studentsReportForm()
         {
             InitializeComponent();
+        }
+
+        private void studentsReportForm_Load(object sender, EventArgs e)
+        {
+            CR = new CrystalReport3();
+            crystalReportViewer1.ReportSource = CR; 
+
         }
     }
 }

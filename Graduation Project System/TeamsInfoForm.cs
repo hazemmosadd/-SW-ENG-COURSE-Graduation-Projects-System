@@ -22,12 +22,14 @@ namespace Graduation_Project_System
         public TeamsInfoForm()
         {
             InitializeComponent();
+           
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+        
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -144,6 +146,12 @@ namespace Graduation_Project_System
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            studentsReportForm f3 = new studentsReportForm(); // Instantiate a Form3 object.
+            f3.Show();
         }
     }
 }
