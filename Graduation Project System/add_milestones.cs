@@ -96,5 +96,11 @@ private void button4_Click(object sender, EventArgs e)
                 MessageBox.Show("milestone is added successfully");
             }
     }
-}
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            milestoneReportForm f3 = new milestoneReportForm(); // Instantiate a Form3 object.
+            f3.Show();
+        }
+    }
 }

@@ -75,6 +75,18 @@
     <Compile Include="add_milestones.Designer.cs">
       <DependentUpon>add_milestones.cs</DependentUpon>
     </Compile>
+    <Compile Include="MilestoneReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MilestoneReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="milestoneReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="milestoneReportForm.Designer.cs">
+      <DependentUpon>milestoneReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="studentsReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +110,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="add_milestones.resx">
       <DependentUpon>add_milestones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilestoneReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MilestoneReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="milestoneReportForm.resx">
+      <DependentUpon>milestoneReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="studentsReportForm.resx">
       <DependentUpon>studentsReportForm.cs</DependentUpon>

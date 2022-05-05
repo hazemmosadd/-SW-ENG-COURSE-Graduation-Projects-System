@@ -10,25 +10,18 @@ using System.Windows.Forms;
 
 namespace Graduation_Project_System
 {
-    public partial class studentsReportForm : Form
+    public partial class milestoneReportForm : Form
     {
-        CrystalReport3 CR;
-
-        public studentsReportForm()
+        MilestoneReport CR;
+        public milestoneReportForm()
         {
             InitializeComponent();
         }
 
-        private void studentsReportForm_Load(object sender, EventArgs e)
-        {
-            CR = new CrystalReport3();
-            crystalReportViewer1.ReportSource = CR; 
-
-        }
-
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
-
+            CR = new MilestoneReport();
+            crystalReportViewer1.ReportSource = CR;
         }
     }
 }
